@@ -4,27 +4,26 @@
 	<title>My Personal Website</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="w3.css"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+	<link rel="stylesheet" href="style_copy3.css">
+	<!-- <iframe src="silence.mp3" allow="autoplay" id="audio"></iframe>
+	<audio id="back" autoplay controls><source src="background.wav" type="audio/wav"></audio>
+	-->
+	<audio loop autoplay><source src="background.wav" type="audio/wav"></audio>
 </head>
 <body>
 	<header>
 		<nav>
-			<ul>
-				<li><a href="#intro">Introduction</a></li>
-				<li><a href="#resume">Resume</a></li>
-				<li><a href="#photos">Photo Collection</a></li>
-				<li><a href="#experience">Work Experience</a></li>
-				<li><a href="#skills">Professional Skills</a></li>
-				<li><a href="#contact">Contact</a></li>
-                <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+			<ul class="nodot">
+				<li><a class="a1" href="#intro::before">Introduction</a></li>
+				<li><a class="a2" href="#experience::before">Resume</a></li>
+				<li><a class="a3" href="#photos::before">More About Me</a></li>
+				<li><a class="a4" href="#contact::before">Contact</a></li>
+                <li><a class="a1" href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="a1" href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
 			</ul>
 		</nav>
-	</header>
-
-	<main>
 		<section id="intro">
 			<!-- Personal Image Photos Block -->
             <p></p>
@@ -35,57 +34,76 @@
 			<!-- Self-Introduction Block -->
 			<div class="introduction-block">
 				<h1>Claire Mao</h1>
-				<p>I am equipped with good communication and problem-solving skills and have perseverance and enthusiasm to meet every challenge.</p>
+				<!-- <h1><span style="Dancing Script">Claire Mao</span></h1> -->
+				<font face="Dancing Script"><p>I am equipped with good communication and problem-solving skills and have perseverance and enthusiasm to meet every challenge.</p></font>
+			
 			</div>
 		</section>
+	</header>
+	
+	<main class="m1">
+		
+		
 
-		<section id="resume">
-			<h2>Resume</h2>
-            			<h3>Work Experience</h3>
-			<ul>
+		<section id="experience">
+			<h2 style = "color:#000000">Experience</h2>
+			<ul class="experience">
 				<li>
-					<h4>Web Developer, XYZ Company</h4>
-					<p>January 2020 - Present</p>
+					<h4 style = "color:#333333">The Ministry Staff of The Academic Affairs Department</h4> 
+					<h5 style = "color:#7ea4c9"> The Computer Science and Information Engineering Student Association</h3>
+					<p style = color:#888888> 2022 - Present</p>
 					<ul>
-						<li>Developed and maintained several websites for clients using HTML, CSS, JavaScript, and PHP.</li>
-						<li>Collaborated with designers and project managers to ensure timely delivery of projects.</li>
-						<li>Provided technical support and resolved issues for clients.</li>
-					</ul>
-				</li>
-				<li>
-					<h4>Web Designer, ABC Agency</h4>
-					<p>June 2018 - December 2019</p>
-					<ul>
-						<li>Designed and developed several websites for clients using Adobe Creative Suite, HTML, CSS, and JavaScript.</li>
-						<li>Collaborated with developers and project managers to ensure timely delivery of projects.</li>
-						<li>Conducted user research and usability testing to improve website performance.</li>
+						<li style="box-shadow: 0 0 0 rgb(255, 255, 255); padding: 0.3rem; list-style-type: disc;">Foresight camp lecturer</li>
+						<li style="box-shadow: 0 0 0 rgb(255, 255, 255); padding: 0.3rem; list-style-type: disc;">Freshman Cup ICPC contest question maker</li>
 					</ul>
 				</li>
 			</ul>
-			<h3>Professional Skills</h3>
+			<br>
+			<ul class="experience">
+				<li >
+					<h4 style = "color:#333333">The Minister of Students' Rights and Affairs Department</h4> 
+					<h5 style = "color:#7ea4c9"> National Hsinchu Girl's Senior High School Student Council</h3>
+					<p style = color:#888888> 2019 - 2020</p>
+					<ul>
+						<li style="box-shadow: 0 0 0 rgb(255, 255, 255); padding: 0.3rem; list-style-type: disc;">Hold the first mock voting activity in the school</li>
+						<li style="box-shadow: 0 0 0 rgb(255, 255, 255); padding: 0.3rem; list-style-type: disc;">Lecturer and planner of multiple student rights courses</li>
+					</ul>
+				</li>
+			</ul>
+			<br>
+			<h2 style = "color:#000000">Education</h2>
+			<ul class="experience">
+				<li>
+					<h4 style = "color:#333333">National Taiwan University</h4> 
+					<h5 style = "color:#7ea4c9"> Computer Science and Information Engineering</h3>
+					<p style = color:#888888> 2021 - Present</p>
+				</li>
+			</ul>
+			<br>
+			<h2 style = "color:#000000">Professional Skills</h3>
 			<ul class="skills">
 				<li>
 					<span>HTML</span>
-					<p>Proficient in HTML5 and CSS3</p>
+					<!-- <p>Proficient in HTML5 and CSS3</p> -->
 				</li>
 				<li>
 					<span>CSS</span>
-					<p>Proficient in CSS3 and preprocessors like Sass and Less</p>
+					<!-- <p>Proficient in CSS3 and preprocessors like Sass and Less</p> -->
 				</li>
 				<li>
-					<span>JavaScript</span>
-					<p>Proficient in vanilla JavaScript and frameworks like React and Angular</p>
+					<span>C++</span>
+					<!-- <p>Proficient in vanilla JavaScript and frameworks like React and Angular</p> -->
 				</li>
 				<li>
-					<span>PHP</span>
-					<p>Proficient in PHP and CMS like WordPress and Drupal</p>
+					<span>Algorithms</span>
+					<!-- <p>Proficient in PHP and CMS like WordPress and Drupal</p> -->
 				</li>
 				<li>
-					<span>Design</span>
-					<p>Proficient in Adobe Creative Suite and Sketch</p>
+					<span>Git</span>
+					<!-- <p>Proficient in Adobe Creative Suite and Sketch</p> -->
 				</li>
 			</ul>
-			<h3>Photo Collection</h3>
+			<!-- <h2 style = "color:#000000">Photo Collection</h3>
 			<ul class="photos">
 				<li><img src="https://via.placeholder.com/500x500" alt="Photo"></li>
 				<li><img src="https://via.placeholder.com/500x500" alt="Photo"></li>
@@ -93,52 +111,77 @@
 				<li><img src="https://via.placeholder.com/500x500" alt="Photo"></li>
 				<li><img src="https://via.placeholder.com/500x500" alt="Photo"></li>
 				<li><img src="https://via.placeholder.com/500x500" alt="Photo"></li>
-			</ul>
+			</ul> -->
 		</section>
 		
-
+	</main>
+	<main class="m2">
 		<section id="photos">
-			<!-- Photo Collection Block -->
-			<div class="photo-block">
-				<h2>Photo Collection</h2>
-				<div class="photo-gallery">
-					<!-- Add your photos here -->
+			<h2 style = "color:#000000; text-align: left;" >More About Me</h2>
+			<div class="photos">
+				<div class="coverflow">
+					<a href="#"><img src="IMG_1254.jpg" width="200"></a>
+					<a href="#"><img src="IMG_1309.jpg"width="200"></a>
+					<a href="#"><img src="IMG_3472.JPG"width="200"></a>
+					<a href="#"><img src="IMG_0842.JPG"width="200"></a>
+					<a href="#"><img src="IMG_3680.JPG"width="200"></a>
+					<a href="#"><img src="IMG_5065.JPG"width="200"></a>
+					<!-- <a href="#"><img src="IMG_9345.JPG"width="200"></a> -->
+					
+					<!-- <a href="#"><img src="20230131_191245.jpg"width="200"></a> -->
+				
+				</div>
+				<div class="coverflow">
+					<a href="#"><img src="IMG_2200.jpg" width="200"></a>
+					<!-- <a href="#"><img src="IMG_2441.jpg"width="200"></a> -->
+					<!-- <a href="#"><img src="IMG_2758.JPG"width="200"></a> -->
+					<a href="#"><img src="IMG_2880.JPG"width="200"></a>
+					<a href="#"><img src="IMG_4293.JPG"width="200"></a>
+					<a href="#"><img src="IMG_6154.JPG"width="200"></a>
+					<!-- <a href="#"><img src="IMG_6594.JPG"width="200"></a> -->
+					<a href="#"><img src="20230131_153857.jpg"width="200"></a>
+					<a href="#"><img src="20220709_191245.jpg"width="200"></a>
+				
+				</div>
+				<div class="coverflow">
+					<!-- <a href="#"><img src="IMG_0203.jpg" width="200"></a> -->
+					<a href="#"><img src="IMG_1446.jpg"width="200"></a>
+					<!-- <a href="#"><img src="IMG_3769.jpg"width="200"></a> -->
+					<a href="#"><img src="IMG_4800.jpg"width="200"></a>
+					<a href="#"><img src="IMG_6809.jpg"width="200"></a>
+					<a href="#"><img src="IMG_1446.jpg"width="200"></a>
+					<!-- <a href="#"><img src="IMG_3769.jpg"width="200"></a> -->
+					<a href="#"><img src="IMG_4800.jpg"width="200"></a>
+					<a href="#"><img src="IMG_1446.jpg"width="200"></a>
+					
 				</div>
 			</div>
 		</section>
-
-		
-
-		<section id="experience">
-			<!-- Work Experience Block -->
-			<div class="experience-block">
-				<h2>Work Experience</h2>
-				<p>Your work experience goes here.</p>
-			</div>
-		</section>
-
-		<section id="skills">
-			<!-- Professional Skills Block -->
-			<div class="skills-block">
-				<h2>Professional Skills</h2>
-				<p>Your professional skills go here.</p>
-			</div>
-		</section>
-
+		<br>
+	</main>
+	<main class="m3">
 		<section id="contact">
-			<h2>Contact Me</h2>
+			<h2 style = "color:#000000">Contact Me</h2>
 			<form>
-				<label for="name">Name:</label>
+				<label for="name" style = "color:#AEC3B0;">Name:</label>
 				<input type="text" id="name" name="name" required>
-				<label for="email">Email:</label>
+				<label for="email" style = "color:#AEC3B0;">Email:</label>
 				<input type="email" id="email" name="email" required>
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" rows="5" required></textarea>
+				<label for="message" style = "color:#AEC3B0;">Message:</label>
+				<textarea id="message" name="message" rows="3" required></textarea>
 				<button type="submit">Send Message</button>
+				
 			</form>
 		</section>
+		<section id="otter">
+			
+			<div class="w3-display-bottomright w3-container">
+				<img src="./otter_sleep.png" onmouseover="this.src='./otter5.png';" onmouseout="this.src='./otter_sleep.png';" width=125>
+			</div>
+			
+			
+		</section>
 	</main>
-
 	<footer>
 		<!-- Social Media Icon Block -->
 		<div class="social-media-block">
@@ -146,6 +189,8 @@
 		</div>
 	</footer>
 
-	<script src="script.js"></script>
+	
+	
+	
 </body>
 </html>
