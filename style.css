@@ -1,0 +1,188 @@
+body {
+	background-color: rgb(246, 206, 243);
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #333333;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 10px;
+}
+
+nav ul li a:hover {
+	background-color: #fff;
+	color: rgb(227, 210, 238);
+}
+
+.image-block {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto 20px;
+}
+
+.image-block img {
+	display: block;
+	width: 200px;
+	height: 200px;
+}
+
+.introduction-block {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.introduction-block h1 {
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+.introduction-block p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.resume-block,
+.photo-block,
+.experience-block,
+.skills-block,
+.contact-block {
+	max-width: 800px;
+	margin: 0 auto 50px;
+	text-align: center;
+}
+
+.resume-block h2,
+.photo-block h2,
+.experience-block h2,
+.skills-block h2,
+.contact-block h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.resume-block p,
+.photo-block p,
+.experience-block p,
+.skills-block p,
+.contact-block p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+
+.skills-block ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.skills-block li {
+	flex: 1;
+	margin: 0 10px;
+}
+
+.skills-block li i {
+	font-size: 24px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.contact-block ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-block li {
+	margin: 0 20px;
+}
+
+.contact-block li a {
+	color: #fff;
+	font-size: 24px;
+}
+
+/* Hover effect for navigation menu links */
+nav ul li a:hover {
+	background-color: #fff;
+	color: rgb(88, 146, 233);
+	transform: scale(1.1);
+}
+
+/* Hover effect for photo gallery images */
+.photo-gallery img:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Animation for self-introduction block */
+.introduction-block {
+	animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/* Animation for work experience block */
+.experience-block {
+	animation: slide-up 1s ease-in-out;
+}
+
+@keyframes slide-up {
+	from {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.photo-gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.photo-gallery slide-in {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
