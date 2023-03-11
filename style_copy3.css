@@ -36,7 +36,7 @@ h2, h3, h4, h5, h6{
 
 body {
 	/* cursor: url(hammer.png); */
-	cursor: url(shell\ \(1\).png), auto;
+	cursor: url(shell.png), auto;
 	background-color: rgb(247, 217, 244);
 	animation-name: background;
     animation-duration: 10s;
