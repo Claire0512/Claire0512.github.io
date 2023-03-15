@@ -26,9 +26,12 @@
 	align-items: center;
 	margin: 0 3px;
 } */
-  
+@font-face{
+	font-family: Dancing;
+	src: url("DancingScript-Regular.ttf");
+}
 h1{
-	font-family: "Dancing Script", monospace;
+	font-family: Dancing, monospace;
 }
 h2, h3, h4, h5, h6{
 	font-family: "Roboto", monospace;
@@ -41,7 +44,7 @@ body {
 	animation-name: background;
     animation-duration: 10s;
 	animation-iteration-count: infinite;
-	/* font-family:"Dancing Script" */
+	/* font-family:Dancing */
 }
 @keyframes background {
 	0%   {background-color: rgb(247, 229, 246);}
@@ -63,8 +66,9 @@ body {
 
 nav {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	/* width: fill-available; */
+	/* justify-content: space-between; */
+	/* align-items: center; */
 	padding: 20px;
 	background-color: #333333;
 }
@@ -72,13 +76,16 @@ nav {
 nav ul {
 	display: flex;
 	/* display: table; */
-	margin: 0 40px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 nav ul li {
 	margin: 0 30px;
+	display: inline;
+	width: 25%;
 	font-family: "Fantasy", monospace;
-	text-align: center;
+	text-align: center; 
 }
 
 
@@ -100,9 +107,9 @@ nav ul li cursor{
 	background-color: #fff;
 	color: rgb(227, 210, 238);
 } */
-.nodot li{
+/* .nodot li{
 	list-style-type: none;
-}
+} */
 
 .image-block {
 	width: 200px;
@@ -136,7 +143,7 @@ nav ul li cursor{
 
 main {
 	/* cursor: url(hammer.png); */
-	max-width: 800px;
+	max-width: 80%;
 	margin: 0 auto;
 	padding: 2rem;
 	background-color: #ffffffbc;
